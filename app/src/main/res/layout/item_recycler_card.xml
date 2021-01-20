@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wajahatkarim3.easyflipview.EasyFlipView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="130dp"
+    android:layout_margin="10dp"
+    android:id="@+id/flip"
+    app:flipEnabled="true"
+    app:flipOnTouch="false"
+    app:flipDuration="100"
+    app:flipType="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/cardfront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/card1" />
+
+    <ImageView
+        android:id="@+id/cardback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardback" />
+
+
+
+</com.wajahatkarim3.easyflipview.EasyFlipView>

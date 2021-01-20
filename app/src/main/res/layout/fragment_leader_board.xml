@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_yellow"
+    tools:context=".fragments.LeaderBoardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/pac_font"
+        android:text="@string/string_main_leaderboard"
+        android:textSize="25sp"
+        android:scaleY="1.6"
+        android:scaleX="1.4"
+        android:textStyle="italic|bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_easy_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 Seconds"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/future_font"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_easy_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 Moves"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/future_font"
+        app:layout_constraintTop_toBottomOf="@id/text_easy_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy Level"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/future_font"
+        app:layout_constraintTop_toBottomOf="@id/text_easy_move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_hard_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 Seconds"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/future_font"
+        app:layout_constraintTop_toBottomOf="@id/text_easy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_hard_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 Seconds"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/future_font"
+        app:layout_constraintTop_toBottomOf="@id/text_hard_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hard Level"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/future_font"
+        app:layout_constraintTop_toBottomOf="@id/text_hard_move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/string_go_back"
+        style="@style/Theme.Button"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_hard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
